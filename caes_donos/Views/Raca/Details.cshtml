@@ -1,0 +1,26 @@
+﻿@model caes_donos.Models.Raca
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Raca</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeRaca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeRaca)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdRaca }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
